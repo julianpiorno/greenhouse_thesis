@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo 'ls'
+                sh 'ls'
                 archiveArtifacts artifacts: '**/dist/*.zip'
             }
         }
