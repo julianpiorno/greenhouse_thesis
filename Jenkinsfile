@@ -33,8 +33,7 @@ pipeline {
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: '**/*.py',
-                                        remoteDirectory: '/tmp',
-                                        execCommand: 'sudo python3 /tmp/hello-world.py'
+                                        execCommand: 'sudo python3 hello-world.py'
                                     )
                                 ]
                             )
