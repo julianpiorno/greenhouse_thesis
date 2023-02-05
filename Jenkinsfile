@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 archiveArtifacts artifacts: '**/*'
+                sh 'python3 hello-world.py'
             }
         }
         stage('Test') {
