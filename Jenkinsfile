@@ -37,7 +37,7 @@ pipeline {
                                         sourceFiles: 'dist/**',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'python3 ./hello-world.py'
+                                        execCommand: 'python3 hello-world.py'
                                     )
                                 ]
                             )
