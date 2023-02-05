@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                archiveArtifacts artifacts: 'dist/'
+                archiveArtifacts artifacts: 'dist/*.zip'
             }
         }
         stage('Test') {
@@ -31,10 +31,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: 'dist/**',
-                                        removePrefix: 'dist/',
-                                        remoteDirectory: '/tmp',
-                                        execCommand: 'python3 /tmp/hello-world.py'
+                                        execCommand: 'python3 hello-world.py'
                                     )
                                 ]
                             )
