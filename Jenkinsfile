@@ -34,10 +34,10 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: 'dist/trainSchedule.zip',
+                                        sourceFiles: '**/*',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo python3 ./hello-world.py'
+                                        execCommand: 'python3 ./hello-world.py'
                                     )
                                 ]
                             )
