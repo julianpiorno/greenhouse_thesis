@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'pwd'
-                archiveArtifacts artifacts: 'dist/*.zip'
+                archiveArtifacts artifacts: '**/*'
             }
         }
         stage('Test') {
