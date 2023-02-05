@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                archiveArtifacts artifacts: 'dist/*'
+                archiveArtifacts artifacts: '**/*'
             }
         }
         stage('Test') {
