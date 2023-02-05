@@ -32,7 +32,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        execCommand: 'python3 hello-world.py'
+                                        execCommand: 'sudo python3 hello-world.py'
                                     )
                                 ]
                             )
