@@ -34,7 +34,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: '**/*.py',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'ls'
+                                        execCommand: 'mv /tmp/*.py /opt/greenhouse-thesis/'
                                     )
                                 ]
                             )
