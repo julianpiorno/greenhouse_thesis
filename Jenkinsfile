@@ -33,7 +33,7 @@ pipeline {
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: '**/*.py',
-                                        remoteDirectory: '/opt/greenhouse-thesis/',
+                                        remoteDirectory: '/tmp',
                                         execCommand: 'sudo python3 /opt/greenhouse-thesis/hello-world.py'
                                     )
                                 ]
