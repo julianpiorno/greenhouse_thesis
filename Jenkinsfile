@@ -34,7 +34,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: '**/*.py',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'touch helloworld.txt'
+                                        execCommand: 'touch /tmp/helloworld.txt'
                                     )
                                 ]
                             )
