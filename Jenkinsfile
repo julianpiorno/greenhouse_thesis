@@ -32,7 +32,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: '**/*.py',
+                                        sourceFiles: './*.py',
                                         remoteDirectory: '/tmp',
                                         execCommand: 'sudo mkdir /opt/greenhouse-thesis'
                                     )
