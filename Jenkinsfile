@@ -41,7 +41,7 @@ pipeline {
                             )
                         ]
                     )
-                    sh 'echo $USERNAME '
+                    sh 'ssh $USERNAME@192.168.1.133 "python3 /tmp/hello-world.py"'
                 }
             }
         }
