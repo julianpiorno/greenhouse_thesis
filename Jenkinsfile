@@ -37,10 +37,10 @@ pipeline {
                                         execTimeout: 18000,
                                         execCommand: ''
                                     )
-                                    sshCommand remote: remote, command: 'python3 /tmp/hello-world.py'
                                 ]
                             )
                         ]
+                        sshCommand command: 'python3 /tmp/hello-world.py'
                     )
                 }
             }
