@@ -35,7 +35,7 @@ pipeline {
                                         sourceFiles: '**/*.py',
                                         usePty: true,
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo python3 < /tmp/hello-world.py'
+                                        execCommand: 'sudo python3 /tmp/hello-world.py'
                                     )
                                 ]
                             )
