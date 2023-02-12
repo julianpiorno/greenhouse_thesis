@@ -41,7 +41,7 @@ pipeline {
                             )
                         ]
                     )
-                    sh 'echo $USER_ID '
+                    sh 'echo 'hola mundo' '
                 }
             }
         }
