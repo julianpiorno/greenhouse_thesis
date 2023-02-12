@@ -35,10 +35,9 @@ pipeline {
                                         sourceFiles: '**/*.py',
                                         remoteDirectory: '/tmp',
                                         execTimeout: 18000,
-                                        execCommand: ''
+                                        execCommand: 'ssh $USERNAME@192.168.1.133 "python3 /tmp/hello-world.py"'
                                     )
                                 ]
-                                sh 'ssh $USERNAME@192.168.1.133 "python3 /tmp/hello-world.py"'
                             )
                         ]
                     )
