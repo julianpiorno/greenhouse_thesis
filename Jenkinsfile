@@ -41,8 +41,8 @@ pipeline {
                             )
                         ]
                     )
+                    sh 'ssh jenkins@192.168.1.133 "python3 /tmp/hello-world.py"'
                 }
-                sh 'ssh jenkins@192.168.1.133 "python3 /tmp/hello-world.py"'
             }
         }
     }
