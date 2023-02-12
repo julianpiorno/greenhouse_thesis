@@ -41,7 +41,7 @@ pipeline {
                             )
                         ]
                     )
-                    sh 'echo $USER_CREDENTIALS'
+                    sh 'echo $USER_ID '
                 }
             }
         }
