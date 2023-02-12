@@ -35,7 +35,7 @@ pipeline {
                                         sourceFiles: '**/*.py',
                                         remoteDirectory: '/tmp',
                                         execTimeout: 18000,
-                                        execCommand: 'python3 /tmp/hello-world.py'
+                                        execCommand: ''
                                     )
                                 ]
                             )
@@ -43,6 +43,7 @@ pipeline {
                     )
                 }
             }
+            sh ‘ssh jenkins@192.168.1.133 “python3 /tmp/hello-world.py”’
         }
     }
 }
