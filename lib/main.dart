@@ -33,17 +33,17 @@ class _HomeState extends State<Home> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Text("Hello world!"),
-          
         ],
       ),
     );
   }
 }
 
-Widget body(){
+Widget body() {
   return Container(
     decoration: BoxDecoration(
-      image: DecorationImage(image: NetworkImage("http://www.villarino.gob.ar/wp-content/uploads/2020/10/UNQ-deuda.jpg"))
-    ),
-  )
+        image: DecorationImage(
+            image: NetworkImage(
+                "http://www.villarino.gob.ar/wp-content/uploads/2020/10/UNQ-deuda.jpg"))),
+  );
 }
