@@ -28,13 +28,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("Greenhouse App"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          Text("Hello world!"),
-        ],
-      ),
+      body: body(),
     );
   }
 }
@@ -44,6 +38,6 @@ Widget body() {
     decoration: BoxDecoration(
         image: DecorationImage(
             image: NetworkImage(
-                "http://www.villarino.gob.ar/wp-content/uploads/2020/10/UNQ-deuda.jpg"))),
+                "https://github.com/julianpiorno/greenhouse_thesis/blob/master/assets/widget/UNQ.jpg"))),
   );
 }
