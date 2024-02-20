@@ -1,0 +1,301 @@
+/*
+---------------------------------------------
+04. nav
+---------------------------------------------
+*/
+nav.menu-ma-azul {
+	margin-top: 17px;
+	width: 525px;
+	width: 650px !important;
+	height: 39px;
+	float: left;
+	position: relative;
+	z-index: 1000; /* background-color:#CC0000*/
+}
+
+nav.menu-ma-azul.english {
+	margin-top: 17px;
+	width: 565px;
+	width: 570px !important;
+	height: 39px;
+	float: left;
+	position: relative;
+	z-index: 1000; /* background-color:#CC0000*/
+}	
+
+nav.menu-ma-azul ul {
+	font-family: 'LatinModernRoman10Bold';
+}
+
+div.mainlevel-ma-azul {
+	height: 39px;
+	float: left;
+}
+
+div#menulist_root-ma-azul {
+	position: relative;
+	z-index: 999;
+	margin: 0;
+	height: 39px;
+}
+
+ul.mainlevel-ma-azul ul {
+	z-index: 1100;
+}
+
+ul.mainlevel-ma-azul ul ul {
+	z-index: 1100;
+}
+
+ul.mainlevel-ma-azul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	/*	position: relative;*/
+}
+
+ul.mainlevel-ma-azul li span {
+	background: url(../images/arrow_down_01_interna_over.gif) bottom
+		no-repeat;
+}
+
+ul.mainlevel-ma-azul li:hover span {
+	background: url(../images/arrow_down_01_interna.gif) bottom no-repeat
+}
+
+ul.mainlevel-ma-azul li li {
+	display: block;
+	float: left;
+	/*position: relative;*/
+	margin: 0;
+	padding: 3px 0;
+	/*background-color: #f60;*/
+}
+
+ul.mainlevel-ma-azul li li ul {
+	left: 10em;
+	top: 0;
+}
+
+
+
+ul.mainlevel-ma-azul ul {
+	display: none;
+	position: absolute;
+	top: 39;
+	left: 0;
+	padding: 15px 20px;
+	width: 594px !important;
+	width: 520px;
+	width /**/: /**/ 480px;
+	background: url(../images/bg_dropdown.png);
+	border: 3px solid #418080;
+	box-shadow: #666 0 2px 2px;
+	/*z-index:10000;*/
+}
+
+ul.mainlevel-ma-azul li > ul {
+	top: 39px;
+	left: 0;
+	z-index: 10000;
+}
+
+ul.mainlevel-ma-azul ul.grado {
+	padding: 15px 20px;
+	width: 918px !important;
+	width: 958px;
+	width /**/: /**/ 918px;
+}
+
+ul.mainlevel-ma-azul li > ul.grado {margin-left: -250px;}
+
+ul.mainlevel-ma-azul li:hover ul,ul.mainlevel-ma-azul li.hover ul {
+	display: block;
+}
+
+ul.mainlevel-ma-azul li ul.menulist-ma-azul li,ul.mainlevel-ma-azul li ul.menulist-ma-azul li
+	{
+	display: block;
+	float: left;
+}
+
+ul.mainlevel-ma-azul li:hover ul ul,ul.mainlevel-ma-azul li.hover ul ul
+	{
+	display: none;
+}
+
+ul.mainlevel-ma-azul li:hover ul li:hover ul,ul.mainlevel-ma-azul li.hover ul li.hover ul
+	{
+	display: block;
+}
+
+/** ul.mainlevel-ma-azul, ul.mainlevel-ma-azul li li {
+	clear: left;
+}
+
+
+
+
+
+div.menu-ma-azul {
+	float:left;
+	width: 600px;
+	height: 25px;}
+
+
+separator 
+span.mainlevel-ma-azul, span.sublevel-ma-azul {
+	border-width: 0px;
+	padding: 5px;
+}*/
+/** IE bugs: a:link, a:visited, a:hover need to be styled as well; does not display separator... workaround? */
+/** customize colors here */
+a.mainlevel-ma-azul,a.mainlevel_active-ma-azul,a.mainlevel_current-ma-azul,span.mainlevel-ma-azul
+	{
+	padding: 7px 7px 0 7px;
+	height: 32px !important;
+	height: 39px;
+	height /**/: /**/ 32px;
+	color: #2d2d2d;
+	text-decoration: none;
+	float: left;
+	display: inline;
+	font-size: 1em;
+	text-align: center;
+	/*	background:url(../images/border_nav.gif) no-repeat left; 	*/
+}
+
+.menu-ma-azul.english a.mainlevel-ma-azul, .menu-ma-azul.english a.mainlevel_active-ma-azul, .menu-ma-azul.english a.mainlevel_current-ma-azul, .menu-ma-azul.english span.mainlevel-ma-azul
+	{
+	padding: 7px 5px 0 6px;
+	height: 32px !important;
+	height: 39px;
+	height /**/: /**/ 32px;
+	color: #2d2d2d;
+	text-decoration: none;
+	float: left;
+	display: inline;
+	font-size: .95em;
+	text-align: center;
+	/*	background:url(../images/border_nav.gif) no-repeat left; 	*/
+}
+
+
+nav ul li a.item:hover,span.mainlevel-ma-azul:hover {
+	background: url(../images/arrow_down_01_interna.gif) bottom no-repeat;
+}
+
+nav ul li a.active,span.mainlevel-ma-azul.active {
+	background: url(../images/arrow_down_01_interna_over.gif) bottom
+		no-repeat;
+}
+
+nav ul li a.home {
+	background: url(../images/icon_home.gif) no-repeat 20px 12px;
+	padding-left: 43px;
+}
+
+nav ul li a.home:hover {
+	background: url(../images/icon_home.gif) no-repeat 20px 12px
+}
+
+nav ul li a.home.active {
+	background: url(../images/icon_home.gif) no-repeat 20px 12px
+}
+
+a.sublevel-ma-azul,a.sublevel_active-ma-azul,a.sublevel_current-ma-azul,a.sublevel-ma-azul:link,a.sublevel_active-ma-azul:link,a.sublevel_current-ma-azul:link,a.sublevel-ma-azul:visited,a.sublevel_active-ma-azul:visited,a.sublevel_current-ma-azul:visited
+	{
+	width: 185px;
+	color: #333;
+}
+
+a.sublevel-ma-azul:hover,a.sublevel_active-ma-azul:hover,a.sublevel_current-ma-azul:hover
+	{
+	color: #000;
+	background-color: #fff
+}
+
+a.sublevel-ma-azul,a.sublevel_active-ma-azul,a.sublevel_current-ma-azul,span.sublevel-ma-azul,a.sublevel-ma-azul:link,a.sublevel_active-ma-azul:link,a.sublevel_current-ma-azul:link,a.sublevel-ma-azul:visited,a.sublevel_active-ma-azul:visited,a.sublevel_current-ma-azul:visited,a.sublevel-ma-azul:hover,a.sublevel_active-ma-azul:hover,a.sublevel_current-ma-azul:hover
+	{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	padding: 0.2em 0.4em 0.2em 0.4em; /* top, right, bottom, left */
+	line-height: 1.2em;
+}
+
+a.sublevel-ma-azul,a.sublevel_active-ma-azul,a.sublevel_current-ma-azul,span.sublevel-ma-azul
+	{
+	font-size: 100%;
+	border-bottom: 1px dotted silver;
+}
+
+ul.mainlevel-ma-azul ul div.items {	width: 45%;}
+ul.mainlevel-ma-azul ul.grado div.items {	width: 25%;}
+ul.mainlevel-ma-azul ul.grado div.items h3 { font-size: 1em; color:#418080; font-weight:bold; }
+
+div.items ol {margin-left: 0}
+
+div.items ol li {width: 100%;}
+ul.mainlevel-ma-azul ul.grado div.items ol li:first-child { font-size: .9em; color:#333; margin-top: 5px;}
+
+div.menu_destacado {
+	width: 50%;
+	padding-left: 15px;
+	border-left: 1px solid #999
+}
+
+
+ul.mainlevel-ma-azul ul.grado div.menu_destacado {
+	width: 20%;
+	padding-left: 15px;
+	border-left: 1px solid #999
+}
+
+div.menu_destacado h1, div.menu_destacado h1 a {
+	margin: 5px 0;
+	font-family: 'AllerBold', Arial, Helvetica, sans-serif;
+	font-size: .95em;
+	color: #418080;
+}
+
+div.menu_destacado p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none
+}
+
+div.menu_destacado p a {color: #333;}
+
+div.menu_destacado p a:hover { text-decoration:underline}
+
+div.menu_destacado figure {
+	display: block;
+	margin: 5px 0;
+	padding: 0; /* box-shadow:#111 0 2px 2px;*/
+}
+
+div.menu_destacado figure a img {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.apartado {
+	width: 480px;
+	margin-top: 15px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	font-style: italic;
+}
+
+.apartado a {
+	color: #418080;
+	text-decoration: underline
+}

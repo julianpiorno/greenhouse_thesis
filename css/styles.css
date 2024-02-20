@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+}
+
+header{
+    background-color: #e2e3de;
+    border-bottom: 5px solid #898339;
+}
+
+header h1 a img{
+    padding: 20px 15px;
+}
+
+/* 
+header h1 a{
+    background: url(../img/logo_unqui.png);
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    width: 223px;
+	height: 84px;
+	text-decoration: none;
+	text-indent: -30000px;
+	/* line-height: 0px; */
+	/* font-size: 0px; */
+/*} */
+
+.box_1024.marco {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 80%;                     /* 1000px original*/
+}
+
+.left {float: left;}
